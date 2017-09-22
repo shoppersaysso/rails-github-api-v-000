@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   post '/repositories/create' => 'repositories#create'
   root 'repositories#index'
   get '/oauth', to: 'sessions#create'
+  get '/auth', to: 'sessions#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
